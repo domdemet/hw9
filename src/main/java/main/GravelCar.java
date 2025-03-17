@@ -13,7 +13,7 @@ public class GravelCar extends Rallycar {
     }
 
     public double calulatePerformace() {
-        return (0.5*(suspensionTravel / 250.0) + 0.5* (getHorsepower()/500.0))*500;
+        return Math.round((0.5*(suspensionTravel / 250.0) + 0.5* (getHorsepower()/500.0))*500);
     }
 
     

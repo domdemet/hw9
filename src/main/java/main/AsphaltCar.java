@@ -13,7 +13,7 @@ public class AsphaltCar extends Rallycar{
     }
 
     public double calulatePerformace() {
-        return (0.5*(downforce / 275.0) + 0.5* (getHorsepower()/500))*500;
+        return Math.round((0.5*(downforce / 275.0) + 0.5* (getHorsepower()/500))*500);
     }
     
 }

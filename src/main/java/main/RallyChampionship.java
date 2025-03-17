@@ -17,7 +17,7 @@ public class RallyChampionship {
         manager.registerCar(new GravelCar("Toyota", "Yaris", 380, 260));
         manager.registerCar(new GravelCar("Ford", "Fiesta", 370, 255));
         manager.registerCar(new GravelCar("Hyundai", "i20", 385, 265));
-        manager.registerCar(new GravelCar("Škoda", "Fabia", 375, 250));
+        manager.registerCar(new GravelCar("Skoda", "Fabia", 375, 250));
 
         // Create and register asphalt cars
         manager.registerCar(new AsphaltCar("Hyundai", "i20", 420, 280));
@@ -67,6 +67,18 @@ public class RallyChampionship {
                 }
             System.out.println();
             }
+
+        System.out.println("\n===== CAR PERFORMANCE RATINGS =====");
+        //Car performaces
+        System.out.println("Gravel cars:");
+        for (Rallycar car : manager.getGravelCars()) {
+            System.out.println(car.getMake() + " " + car.getModel() + " Performance: " + car.calulatePerformace());
+        }
+
+        System.out.println("\nAsphalt cars:");
+        for (Rallycar car : manager.getAsphaltCars()) {
+            System.out.println(car.getMake() + " " + car.getModel() + " Performance: " + car.calulatePerformace());
+        }
 
                 
 
